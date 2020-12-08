@@ -17,6 +17,5 @@ FILES
 - `03-plot_figure_3.ipynb`: contains code for reproducing individual panels depicted in Figure 3 of the main text, where the code will save each plot. 
 - `04-plot_figure_4.ipynb`: contains code for reproducing individual panels depicted in Figure 4 of the main text, where the code will save each plot. 
 - `05-statistical_tests.ipynb`: contains code for performing analysis of variance and post-hoc tests, where the output is automatically converted to a set number of significant digits for consistency. 
-- `evaluating_classifications.py`: contains data preprocessing functions for both stages of the experiment, helper functions and various operations that are used in the `01-data_preparation.ipynb` notebook.
-
+- `evaluating_classifications.py`: contains data preprocessing functions for both stages of the experiment, helper functions and various operations that are used in the `01-data_preparation.ipynb` notebook. 
 -`sliding_window.py`: contains data analysis functions for conducting a sliding window analysis of each experimental group's performance for both stages of the experiment across each task. The script is called in `01-data_preparation.ipynb` to generate processed DataFrames ready for plotting and statistical testing. 
