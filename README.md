@@ -3,7 +3,7 @@
 ## Table of Contents
 * [General info](general-info)
 * [Data](#data)
-* [Code](#code)
+* [Analysis](#code)
 
 ## General info
 This repository contains the code and (anonymized) data necessary for reproducing the main findings of [Straub, V. J., Tsvetkova, M., & Yasseri, T. (*arXiv* 2020)](https://arxiv.org/pdf/2009.11038.pdf). A more extensive collection of materials including figures found in the supplementary material can be found on the Open Science Framework [project page](https://osf.io/6rcgx/?view_only=7d72c5c914e14f6a9f6c56d313a0c08b). The following text provides a summary of each file and it's function, with further comments provided throughout the code. 
@@ -14,7 +14,7 @@ This repository contains the code and (anonymized) data necessary for reproducin
 
 
 
-## Code
+## Analysis
 * `modelResults/` contains the individual cross-validated maximum likelihood estimates from Exp 1 (`Exp1/`) and Exp 2 (`networkBandit/`). It also contains `modelFit.csv` and `paramEstimates.csv` as the compiled dataframes describing the model results in Exp 2 for convenience.  In addition, `Exp1diffevidence.csv` and `Exp2diffevidence.csv` contain the log loss of each model for computing the protected exceedence probabilities, which is then saved as `Exp1PXP.csv` and `Exp2PXP.csv`. Lastly, the model-based analyses of the bonus from from Exp 2 are here for covenience as `BanditBonusRoundmodelDF.Rds`
 * `plots/` contains plots for the paper, where the code will save each plot
 * `utilities.R` contains data preprocessing functions for each experiment and various vector operations that are used across multiple scripts
