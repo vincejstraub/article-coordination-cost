@@ -4,7 +4,6 @@
 * [General info](general-info)
 * [Data](#data)
 * [Code](#code)
-* [Figures](#figures)
 
 ## General info
 This repository contains the code and (anonymized) data necessary for reproducing the main findings of [Straub, V. J., Tsvetkova, M., & Yasseri, T. (*arXiv* 2020)](https://arxiv.org/pdf/2009.11038.pdf). A more extensive collection of materials including figures found in the supplementary material can be found on the Open Science Framework [project page](https://osf.io/6rcgx/?view_only=7d72c5c914e14f6a9f6c56d313a0c08b). The following text provides a summary of each file and it's function, with further comments provided throughout the code. 
@@ -31,9 +30,6 @@ This repository contains the code and (anonymized) data necessary for reproducin
 
 * `Exp1ModelingResults.R` contains code for all model-based analyses
 
-
-## Figures
-* Contains the main figures reproduced by the above code. 
 
 
 This code is being released with a permissive open-source license. You should feel free to use or adapt the code as long as you follow the terms of the license. If you make use of the code, we would appreciate that you cite the paper. 
