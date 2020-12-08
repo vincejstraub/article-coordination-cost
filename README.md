@@ -15,21 +15,13 @@ This repository contains the code and (anonymized) data necessary for reproducin
 
 
 ## Analysis
-* `modelResults/` contains the individual cross-validated maximum likelihood estimates from Exp 1 (`Exp1/`) and Exp 2 (`networkBandit/`). It also contains `modelFit.csv` and `paramEstimates.csv` as the compiled dataframes describing the model results in Exp 2 for convenience.  In addition, `Exp1diffevidence.csv` and `Exp2diffevidence.csv` contain the log loss of each model for computing the protected exceedence probabilities, which is then saved as `Exp1PXP.csv` and `Exp2PXP.csv`. Lastly, the model-based analyses of the bonus from from Exp 2 are here for covenience as `BanditBonusRoundmodelDF.Rds`
-* `plots/` contains plots for the paper, where the code will save each plot
-* `utilities.R` contains data preprocessing functions for each experiment and various vector operations that are used across multiple scripts
-* `statisticalTests.R` contains code for performing t-tests and correlations, where the output is formatted for Latex and automatically converted to a set number of significant digits for consistency. Contains code from van Doorn et al., (2018) for computing the Bayes factor for Kendall's rank correlation [paper](https://amstat.tandfonline.com/doi/full/10.1080/00031305.2016.1264998)
-
-### Training Stage: 
-
-* `Exp1Behavior.R` contains all the behavioral analyses
-* `Exp1ModelCV.R` contains code for model fitting 
-* `Exp1ModelingResults.R` contains code for all model-based analyses
-
-### Testing Stage: 
-
-* `Exp1ModelingResults.R` contains code for all model-based analyses
-
+* `01-data_preparation.ipynb`: this is the main data preparation notebook that takes in the raw data and performs data cleaning and formatting, preprocessing, and descriptive statistics; it should be run first. 
+* `02-plot_figure_2.ipynb`: contains code for reproducing individual panels depicted in Figure 2 of the main text, where the code will save each plot. 
+* `03-plot_figure_3.ipynb`: contains code for reproducing individual panels depicted in Figure 3 of the main text, where the code will save each plot. 
+* `04-plot_figure_4.ipynb`: contains code for reproducing individual panels depicted in Figure 4 of the main text, where the code will save each plot. 
+* `05-statistical_tests.ipynb`: contains code for performing analysis of variance and post-hoc tests, where the output is automatically converted to a set number of significant digits for consistency. 
+* `evaluating_classifications.py`: contains data preprocessing functions for both stages of the experiment, helper functions and various operations that are used in the `01-data_preparation.ipynb` notebook. 
+* `sliding_window.py`: contains data analysis functions for conducting a sliding window analysis of each experimental group's performance for both stages of the experiment across each task. The script is called in `01-data_preparation.ipynb` to generate processed DataFrames ready for plotting and statistical testing. 
 
 
 This code is being released with a permissive open-source license. You should feel free to use or adapt the code as long as you follow the terms of the license. If you make use of the code, we would appreciate that you cite the paper. 
