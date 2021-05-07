@@ -4,4 +4,4 @@ __pycache__/
 .ipynb_checkpoints/
 .virtual_documents
 Archive/
-wildcam-gorongosa-workflows.csv
+external/
